@@ -19,7 +19,7 @@ export const Experience = () => {
           className="absolute xl:left-28 left-9 top-0 w-[4px] h-full bg-dark origin-top"
           style={{ scaleY: scrollYProgress }}
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="w-full flex flex-col items-start justify-between md:ml-4">
           {EXPERIENCE.map((exp, index) => (
             <Details
               key={index}
