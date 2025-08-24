@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
-
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6';
 export default function Footer() {
   return (
     <footer className="bg-white dark:bg-dark border-t border-gray-200 dark:border-gray-800">
@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <Link href="/" className="text-xl font-bold text-primary">
-              Devfolio&trade;
+              JesusOctavio&trade;
             </Link>
             <p className="text-sm text-secondary mt-2">
-              © {new Date().getFullYear()} Devfolio. All rights reserved.
+              © {new Date().getFullYear()} JesusOctavio.
             </p>
           </div>
           
@@ -30,7 +30,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
             >
-              <FaTwitter className="h-6 w-6" />
+              <FaXTwitter className="h-6 w-6" />
             </a>
             <a
               href="https://linkedin.com/in/yourusername"
