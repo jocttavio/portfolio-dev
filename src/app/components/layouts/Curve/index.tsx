@@ -11,7 +11,7 @@ const routes : Record<string, string> = {
     "/contact": "Contact"
 } 
 
-const anim = (variants) => {
+const anim = (variants: any) => {
     return {
         variants,
         initial: "initial",
