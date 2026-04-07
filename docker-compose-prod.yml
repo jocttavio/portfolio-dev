@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: portfolio-container
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - "3001:3000"  # Mapea puerto 3000 (host) → 3000 (contenedor)
+    environment:
+      NODE_ENV: production
