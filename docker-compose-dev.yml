@@ -10,5 +10,10 @@ services:
     volumes:
       - .:/app
       - /app/node_modules  # Para evitar conflictos con node_modules local
-    environment:
-      NODE_ENV: development
+    networks:
+      - nginx-network
+
+networks:
+  nginx-network:
+    driver: bridge
+    external: true
