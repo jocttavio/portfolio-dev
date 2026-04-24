@@ -1,10 +1,11 @@
 
 services:
   app:
-    container_name: portfolio-container
+    container_name: portfolio-octavio-container
     build:
       context: .
       dockerfile: Dockerfile.mounted
+    image: docker.io/octavio/portfolio-image:1.0
     ports:
       - "3000:3000"  # Mapea puerto 3000 (host) → 3000 (contenedor)
     volumes:
